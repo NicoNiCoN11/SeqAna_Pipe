@@ -1,0 +1,13 @@
+name: rnaseq-pipeline
+channels:
+  - bioconda
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.9
+  - nextflow>=23.04.0
+  - fastqc=0.12.1
+  - star=2.7.10b
+  - subread=2.0.6
+  - samtools=1.17
+  - multiqc=1.15

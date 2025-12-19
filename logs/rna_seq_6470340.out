@@ -1,0 +1,36 @@
+
+ N E X T F L O W   ~  version 25.10.2
+
+Launching `main.nf` [goofy_hirsch] DSL2 - revision: 6fad2776ca
+
+
+============================================
+RNA-seq Count Pipeline
+============================================
+samplesheet  : /home/jiguo/SeqAna_Pipe/samplesheet.csv
+genome       : /home/jiguo/data/data/ref_genome/GRCh38.primary_assembly.genome.fa
+gtf          : /home/jiguo/data/data/ref_genome/gencode.v47.primary_assembly.annotation.gtf
+star_index   : Will be generated
+outdir       : /home/jiguo/data/data/outdir_rnaseq
+stranded     : 0
+============================================
+
+[-        ] FASTQC        | 0 of 5
+[-        ] STAR_INDEX    | 0 of 1
+[-        ] STAR_ALIGN    -
+[-        ] FEATURECOUNTS -
+[-        ] MULTIQC       -
+
+executor >  local (2)
+[85/bf5ed6] FASTQC (control) | 0 of 7
+[-        ] STAR_INDEX       | 0 of 1
+[-        ] STAR_ALIGN       -
+[-        ] FEATURECOUNTS    -
+[-        ] MULTIQC          -
+
+executor >  local (3)
+[85/bf5ed6] FASTQC (control) | 1 of 7
+[-        ] STAR_INDEX       | 0 of 1
+[-        ] STAR_ALIGN       -
+[-        ] FEATURECOUNTS    -
+[-        ] MULTIQC          -
