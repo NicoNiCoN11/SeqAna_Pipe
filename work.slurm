@@ -17,16 +17,15 @@ conda activate rnaseq-pipeline
 # Set work directory to scratch or large storage
 export NXF_WORK="/home/jiguo/data/data/outdir_rnaseq/work"
 
-mkdir -p $NXF_WORK
+# mkdir -p $NXF_WORK
 
 # Run pipeline
 nextflow run main.nf \
   --samplesheet /home/jiguo/SeqAna_Pipe/samplesheet.csv \
   --genome /home/jiguo/data/data/ref_genome/GRCh38.primary_assembly.genome.fa \
   --gtf /home/jiguo/data/data/ref_genome/gencode.v47.primary_assembly.annotation.gtf \
+  --star_index /home/jiguo/data/data/outdir_rnaseq/star_index/star_index \
   --outdir /home/jiguo/data/data/outdir_rnaseq \
-  --stranded 0 \
-  -w $NXF_WORK \
   -resume
 
 # Cleanup work directory after successful completion (optional)

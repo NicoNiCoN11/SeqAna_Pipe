@@ -1,0 +1,2 @@
+[ERROR] Unable to engage: invalid release name 'stable' for the environment 'helvetios'
+slurmstepd: error: *** JOB 6472982 ON h147 CANCELLED AT 2025-12-19T16:10:14 ***

@@ -1,0 +1,118 @@
+
+ N E X T F L O W   ~  version 25.10.2
+
+Launching `main.nf` [fabulous_wing] DSL2 - revision: 93a6916882
+
+
+============================================
+RNA-seq Count Pipeline
+============================================
+samplesheet  : /home/jiguo/SeqAna_Pipe/samplesheet.csv
+genome       : /home/jiguo/data/data/ref_genome/GRCh38.primary_assembly.genome.fa
+gtf          : /home/jiguo/data/data/ref_genome/gencode.v47.primary_assembly.annotation.gtf
+star_index   : /home/jiguo/data/data/outdir_rnaseq/star_index/star_index
+outdir       : /home/jiguo/data/data/outdir_rnaseq
+stranded     : 0
+============================================
+
+[-        ] FASTQC        -
+[-        ] STAR_ALIGN    -
+[-        ] FEATURECOUNTS -
+[-        ] MULTIQC       -
+
+executor >  local (1)
+[85/bf5ed6] FASTQC (control)     | 7 of 7, cached: 7 ✔
+[6f/c41ce3] STAR_ALIGN (control) | 0 of 7
+[-        ] FEATURECOUNTS        -
+[-        ] MULTIQC              -
+
+executor >  local (1)
+[85/bf5ed6] FASTQC (control)     | 7 of 7, cached: 7 ✔
+[6f/c41ce3] STAR_ALIGN (control) | 0 of 7
+[-        ] FEATURECOUNTS        -
+[-        ] MULTIQC              -
+
+executor >  local (2)
+[85/bf5ed6] FASTQC (control)     | 7 of 7, cached: 7 ✔
+[6f/c41ce3] STAR_ALIGN (control) | 1 of 7
+[-        ] FEATURECOUNTS        -
+[-        ] MULTIQC              -
+
+executor >  local (3)
+[85/bf5ed6] FASTQC (control)    | 7 of 7, cached: 7 ✔
+[c6/3192fd] STAR_ALIGN (rep3_1) | 2 of 7
+[-        ] FEATURECOUNTS       -
+[-        ] MULTIQC             -
+
+executor >  local (4)
+[85/bf5ed6] FASTQC (control)    | 7 of 7, cached: 7 ✔
+[2e/fc1f39] STAR_ALIGN (rep2_1) | 3 of 7
+[-        ] FEATURECOUNTS       -
+[-        ] MULTIQC             -
+
+executor >  local (4)
+[85/bf5ed6] FASTQC (control)    | 7 of 7, cached: 7 ✔
+[2e/fc1f39] STAR_ALIGN (rep2_1) | 3 of 7
+[-        ] FEATURECOUNTS       -
+[-        ] MULTIQC             -
+
+executor >  local (5)
+[85/bf5ed6] FASTQC (control)    | 7 of 7, cached: 7 ✔
+[02/b5d5ad] STAR_ALIGN (rep1_1) | 4 of 7
+[-        ] FEATURECOUNTS       -
+[-        ] MULTIQC             -
+
+executor >  local (5)
+[85/bf5ed6] FASTQC (control)    | 7 of 7, cached: 7 ✔
+[02/b5d5ad] STAR_ALIGN (rep1_1) | 4 of 7
+[-        ] FEATURECOUNTS       -
+[-        ] MULTIQC             -
+
+executor >  local (6)
+[85/bf5ed6] FASTQC (control)    | 7 of 7, cached: 7 ✔
+[52/327e74] STAR_ALIGN (rep3_0) | 5 of 7
+[-        ] FEATURECOUNTS       -
+[-        ] MULTIQC             -
+
+executor >  local (6)
+[85/bf5ed6] FASTQC (control)    | 7 of 7, cached: 7 ✔
+[52/327e74] STAR_ALIGN (rep3_0) | 5 of 7
+[-        ] FEATURECOUNTS       -
+[-        ] MULTIQC             -
+
+executor >  local (7)
+[85/bf5ed6] FASTQC (control)    | 7 of 7, cached: 7 ✔
+[8d/ec37f1] STAR_ALIGN (rep2_0) | 6 of 7
+[-        ] FEATURECOUNTS       -
+[-        ] MULTIQC             -
+
+executor >  local (7)
+[85/bf5ed6] FASTQC (control)    | 7 of 7, cached: 7 ✔
+[8d/ec37f1] STAR_ALIGN (rep2_0) | 6 of 7
+[-        ] FEATURECOUNTS       -
+[-        ] MULTIQC             -
+
+executor >  local (8)
+[85/bf5ed6] FASTQC (control)    | 7 of 7, cached: 7 ✔
+[8d/ec37f1] STAR_ALIGN (rep2_0) | 7 of 7 ✔
+[50/66a35f] FEATURECOUNTS (1)   | 0 of 1
+[-        ] MULTIQC             -
+
+executor >  local (9)
+[85/bf5ed6] FASTQC (control)    | 7 of 7, cached: 7 ✔
+[8d/ec37f1] STAR_ALIGN (rep2_0) | 7 of 7 ✔
+[50/66a35f] FEATURECOUNTS (1)   | 1 of 1 ✔
+[fb/4ad9a0] MULTIQC             | 0 of 1
+
+executor >  local (9)
+[85/bf5ed6] FASTQC (control)    | 7 of 7, cached: 7 ✔
+[8d/ec37f1] STAR_ALIGN (rep2_0) | 7 of 7 ✔
+[50/66a35f] FEATURECOUNTS (1)   | 1 of 1 ✔
+[fb/4ad9a0] MULTIQC             | 1 of 1 ✔
+Completed at: 19-Dec-2025 18:14:43
+Duration    : 1h 51m 53s
+CPU hours   : 17.8 (19.1% cached)
+Succeeded   : 9
+Cached      : 7
+
+

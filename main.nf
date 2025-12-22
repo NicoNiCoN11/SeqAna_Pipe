@@ -78,13 +78,15 @@ process STAR_INDEX {
 process STAR_ALIGN {
     tag "$sample_id"
     publishDir "${params.outdir}/aligned", mode: 'copy', pattern: "*.bam*"
+    publishDir "${params.outdir}/star_logs", mode: 'copy', pattern: "*.Log.final.out"
+    publishDir "${params.outdir}/star_logs", mode: 'copy', pattern: "*.SJ.out.tab"
     
     input:
     tuple val(sample_id), path(reads)
     path index
     
     output:
-    tuple val(sample_id), path("${sample_id}.Aligned.sortedByCoord.out.bam"), emit: bam
+    tuple val(sample_id), path("${sample_id}.Aligned.sortedByCoord.out.bam"), path("${sample_id}.Aligned.sortedByCoord.out.bam.bai"), emit: bam
     path "${sample_id}.Log.final.out", emit: log
     path "${sample_id}.SJ.out.tab", emit: splice_junctions
     
@@ -158,8 +160,8 @@ workflow {
     ============================================
     """.stripIndent()
     
-    // Create channels from samplesheet
-    Channel
+
+    def reads_fastqc = Channel
         .fromPath(params.samplesheet, checkIfExists: true)
         .splitCsv(header: true)
         .map { row -> 
@@ -168,27 +170,41 @@ workflow {
             def read2 = file(row.read2, checkIfExists: true)
             return tuple(sample_id, [read1, read2])
         }
-        .set { reads_ch }
+    
+    def reads_star = Channel
+        .fromPath(params.samplesheet, checkIfExists: true)
+        .splitCsv(header: true)
+        .map { row -> 
+            def sample_id = row.sample_id
+            def read1 = file(row.read1, checkIfExists: true)
+            def read2 = file(row.read2, checkIfExists: true)
+            return tuple(sample_id, [read1, read2])
+        }
     
     // Create genome and GTF channels
     genome_ch = Channel.fromPath(params.genome, checkIfExists: true)
     gtf_ch = Channel.fromPath(params.gtf, checkIfExists: true)
     
-    // FastQC
-    FASTQC(reads_ch)
+    reads_ch = Channel
+        .fromPath(params.samplesheet, checkIfExists: true)
+        .splitCsv(header: true)
+        .map { tuple(it.sample_id, [file(it.read1), file(it.read2)]) }
+
     
     // STAR index
     if (params.star_index && file(params.star_index).exists()) {
-        index_ch = Channel.fromPath(params.star_index, checkIfExists: true)
+        index_ch = Channel.fromPath(params.star_index, type: 'dir').first()
     } else {
         index_ch = STAR_INDEX(genome_ch, gtf_ch)
     }
-    
+    FASTQC(reads_ch)
     // Alignment
     STAR_ALIGN(reads_ch, index_ch)
     
     // Count features
-    bams_ch = STAR_ALIGN.out.bam.map { it[1] }.collect()
+    bams_ch = STAR_ALIGN.out.bam
+        .map { sample_id, bam, bai -> bam }
+        .collect()
     FEATURECOUNTS(gtf_ch, bams_ch)
     
     // MultiQC

@@ -1,43 +1,43 @@
-Dec-19 13:39:48.694 [main] DEBUG nextflow.cli.Launcher - $> nextflow run main.nf --samplesheet /home/jiguo/SeqAna_Pipe/samplesheet.csv --genome /home/jiguo/data/data/ref_genome/GRCh38.primary_assembly.genome.fa --gtf /home/jiguo/data/data/ref_genome/gencode.v47.primary_assembly.annotation.gtf --outdir /home/jiguo/data/data/outdir_rnaseq --stranded 0
-Dec-19 13:39:48.778 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 25.10.2
-Dec-19 13:39:48.819 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/jiguo/.nextflow/plugins; core-plugins: nf-amazon@3.4.2,nf-azure@1.20.2,nf-cloudcache@0.5.0,nf-codecommit@0.5.0,nf-console@1.3.0,nf-google@1.23.3,nf-k8s@1.2.2,nf-tower@1.17.3,nf-wave@1.16.1
-Dec-19 13:39:48.847 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
-Dec-19 13:39:48.848 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
-Dec-19 13:39:48.851 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.12.0 in 'deployment' mode
-Dec-19 13:39:48.866 [main] DEBUG nextflow.util.RetryConfig - Missing nextflow session - using default retry config
-Dec-19 13:39:48.984 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
-Dec-19 13:39:49.011 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /home/jiguo/SeqAna_Pipe/nextflow.config
-Dec-19 13:39:49.014 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /home/jiguo/SeqAna_Pipe/nextflow.config
-Dec-19 13:39:49.037 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
-Dec-19 13:39:49.449 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
-Dec-19 13:39:49.450 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
-Dec-19 13:39:49.464 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /home/jiguo/.nextflow/secrets/store.json
-Dec-19 13:39:49.466 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@36c281ed] - activable => nextflow.secret.LocalSecretsProvider@36c281ed
-Dec-19 13:39:49.468 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 from script declaration
-Dec-19 13:39:49.482 [main] DEBUG nextflow.cli.CmdRun - Launching `main.nf` [silly_bartik] DSL2 - revision: 6fad2776ca
-Dec-19 13:39:49.529 [main] DEBUG nextflow.Session - Session UUID: 68648155-d587-4701-bc96-3609d7f6b471
-Dec-19 13:39:49.529 [main] DEBUG nextflow.Session - Run name: silly_bartik
-Dec-19 13:39:49.530 [main] DEBUG nextflow.Session - Executor pool size: 8
-Dec-19 13:39:49.538 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
-Dec-19 13:39:49.543 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=24; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
-Dec-19 13:39:49.561 [main] DEBUG nextflow.cli.CmdRun - 
+Dec-19 14:02:48.616 [main] DEBUG nextflow.cli.Launcher - $> nextflow run main.nf --samplesheet /home/jiguo/SeqAna_Pipe/samplesheet.csv --genome /home/jiguo/data/data/ref_genome/GRCh38.primary_assembly.genome.fa --gtf /home/jiguo/data/data/ref_genome/gencode.v47.primary_assembly.annotation.gtf --outdir /home/jiguo/data/data/outdir_rnaseq --stranded 0 -w /home/jiguo/data/data/outdir_rnaseq/work -resume
+Dec-19 14:02:48.704 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 25.10.2
+Dec-19 14:02:48.745 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/jiguo/.nextflow/plugins; core-plugins: nf-amazon@3.4.2,nf-azure@1.20.2,nf-cloudcache@0.5.0,nf-codecommit@0.5.0,nf-console@1.3.0,nf-google@1.23.3,nf-k8s@1.2.2,nf-tower@1.17.3,nf-wave@1.16.1
+Dec-19 14:02:48.773 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Dec-19 14:02:48.774 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Dec-19 14:02:48.777 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.12.0 in 'deployment' mode
+Dec-19 14:02:48.791 [main] DEBUG nextflow.util.RetryConfig - Missing nextflow session - using default retry config
+Dec-19 14:02:48.908 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Dec-19 14:02:48.935 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /home/jiguo/SeqAna_Pipe/nextflow.config
+Dec-19 14:02:48.938 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /home/jiguo/SeqAna_Pipe/nextflow.config
+Dec-19 14:02:48.961 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
+Dec-19 14:02:49.375 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Dec-19 14:02:49.375 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Dec-19 14:02:49.389 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /home/jiguo/.nextflow/secrets/store.json
+Dec-19 14:02:49.392 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@36c281ed] - activable => nextflow.secret.LocalSecretsProvider@36c281ed
+Dec-19 14:02:49.393 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 from script declaration
+Dec-19 14:02:49.408 [main] DEBUG nextflow.cli.CmdRun - Launching `main.nf` [condescending_faraday] DSL2 - revision: 6fad2776ca
+Dec-19 14:02:49.455 [main] DEBUG nextflow.Session - Session UUID: 68648155-d587-4701-bc96-3609d7f6b471
+Dec-19 14:02:49.455 [main] DEBUG nextflow.Session - Run name: condescending_faraday
+Dec-19 14:02:49.456 [main] DEBUG nextflow.Session - Executor pool size: 8
+Dec-19 14:02:49.464 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Dec-19 14:02:49.469 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=24; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Dec-19 14:02:49.487 [main] DEBUG nextflow.cli.CmdRun - 
   Version: 25.10.2 build 10555
   Created: 28-11-2025 19:24 UTC (20:24 CEST)
   System: Linux 5.14.0-70.30.1.el9_0.x86_64
   Runtime: Groovy 4.0.28 on OpenJDK 64-Bit Server VM 22.0.1-internal-adhoc.conda.src
   Encoding: UTF-8 (UTF-8)
-  Process: 2368457@h147 [10.91.19.147]
-  CPUs: 8 - Mem: 188 GB (168.1 GB) - Swap: 1024 MB (477.7 MB)
-Dec-19 13:39:49.578 [main] DEBUG nextflow.Session - Work-dir: /home/jiguo/SeqAna_Pipe/work [gpfs]
-Dec-19 13:39:49.578 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /home/jiguo/SeqAna_Pipe/bin
-Dec-19 13:39:49.587 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
-Dec-19 13:39:49.595 [main] DEBUG nextflow.Session - Observer factory (v2): LinObserverFactory
-Dec-19 13:39:49.598 [main] DEBUG nextflow.Session - Observer factory (v2): DefaultObserverFactory
-Dec-19 13:39:49.638 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
-Dec-19 13:39:49.647 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 9; maxThreads: 1000
-Dec-19 13:39:49.719 [main] DEBUG nextflow.Session - Session start
-Dec-19 13:39:50.256 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
-Dec-19 13:39:50.364 [main] INFO  nextflow.Nextflow - 
+  Process: 2371784@h147 [10.91.19.147]
+  CPUs: 8 - Mem: 188 GB (168 GB) - Swap: 1024 MB (484.5 MB)
+Dec-19 14:02:49.509 [main] DEBUG nextflow.Session - Work-dir: /home/jiguo/data/data/outdir_rnaseq/work [gpfs]
+Dec-19 14:02:49.509 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /home/jiguo/SeqAna_Pipe/bin
+Dec-19 14:02:49.518 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Dec-19 14:02:49.527 [main] DEBUG nextflow.Session - Observer factory (v2): LinObserverFactory
+Dec-19 14:02:49.530 [main] DEBUG nextflow.Session - Observer factory (v2): DefaultObserverFactory
+Dec-19 14:02:49.570 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Dec-19 14:02:49.581 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 9; maxThreads: 1000
+Dec-19 14:02:49.637 [main] DEBUG nextflow.Session - Session start
+Dec-19 14:02:50.165 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Dec-19 14:02:50.273 [main] INFO  nextflow.Nextflow - 
 ============================================
 RNA-seq Count Pipeline
 ============================================
@@ -49,67 +49,39 @@ outdir       : /home/jiguo/data/data/outdir_rnaseq
 stranded     : 0
 ============================================
 
-Dec-19 13:39:50.454 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
-Dec-19 13:39:50.454 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Dec-19 13:39:50.463 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
-Dec-19 13:39:50.471 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=8; memory=188 GB; capacity=8; pollInterval=100ms; dumpInterval=5m
-Dec-19 13:39:50.473 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
-Dec-19 13:39:50.495 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'FASTQC': maxForks=0; fair=false; array=0
-Dec-19 13:39:50.523 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withName:STAR_INDEX` matches process STAR_INDEX
-Dec-19 13:39:50.526 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
-Dec-19 13:39:50.526 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Dec-19 13:39:50.527 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'STAR_INDEX': maxForks=0; fair=false; array=0
-Dec-19 13:39:50.531 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withName:STAR_ALIGN` matches process STAR_ALIGN
-Dec-19 13:39:50.536 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
-Dec-19 13:39:50.536 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Dec-19 13:39:50.537 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'STAR_ALIGN': maxForks=0; fair=false; array=0
-Dec-19 13:39:50.550 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
-Dec-19 13:39:50.550 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Dec-19 13:39:50.551 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'FEATURECOUNTS': maxForks=0; fair=false; array=0
-Dec-19 13:39:50.564 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
-Dec-19 13:39:50.564 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Dec-19 13:39:50.564 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'MULTIQC': maxForks=0; fair=false; array=0
-Dec-19 13:39:50.567 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: FASTQC, STAR_INDEX, FEATURECOUNTS, MULTIQC, STAR_ALIGN
-Dec-19 13:39:50.570 [main] DEBUG nextflow.Session - Igniting dataflow network (8)
-Dec-19 13:39:50.576 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > FASTQC
-Dec-19 13:39:50.576 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > STAR_INDEX
-Dec-19 13:39:50.576 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > STAR_ALIGN
-Dec-19 13:39:50.576 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > FEATURECOUNTS
-Dec-19 13:39:50.576 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > MULTIQC
-Dec-19 13:39:50.577 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+Dec-19 14:02:50.366 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Dec-19 14:02:50.366 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Dec-19 14:02:50.376 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Dec-19 14:02:50.383 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=8; memory=188 GB; capacity=8; pollInterval=100ms; dumpInterval=5m
+Dec-19 14:02:50.386 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
+Dec-19 14:02:50.408 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'FASTQC': maxForks=0; fair=false; array=0
+Dec-19 14:02:50.437 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withName:STAR_INDEX` matches process STAR_INDEX
+Dec-19 14:02:50.440 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Dec-19 14:02:50.440 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Dec-19 14:02:50.441 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'STAR_INDEX': maxForks=0; fair=false; array=0
+Dec-19 14:02:50.445 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withName:STAR_ALIGN` matches process STAR_ALIGN
+Dec-19 14:02:50.450 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Dec-19 14:02:50.450 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Dec-19 14:02:50.451 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'STAR_ALIGN': maxForks=0; fair=false; array=0
+Dec-19 14:02:50.464 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Dec-19 14:02:50.464 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Dec-19 14:02:50.464 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'FEATURECOUNTS': maxForks=0; fair=false; array=0
+Dec-19 14:02:50.477 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Dec-19 14:02:50.477 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Dec-19 14:02:50.477 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'MULTIQC': maxForks=0; fair=false; array=0
+Dec-19 14:02:50.480 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: FASTQC, STAR_INDEX, FEATURECOUNTS, MULTIQC, STAR_ALIGN
+Dec-19 14:02:50.483 [main] DEBUG nextflow.Session - Igniting dataflow network (8)
+Dec-19 14:02:50.489 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > FASTQC
+Dec-19 14:02:50.489 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > STAR_INDEX
+Dec-19 14:02:50.489 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > STAR_ALIGN
+Dec-19 14:02:50.489 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > FEATURECOUNTS
+Dec-19 14:02:50.489 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > MULTIQC
+Dec-19 14:02:50.490 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
   Script_91d31cd88297eee5: /home/jiguo/SeqAna_Pipe/main.nf
-Dec-19 13:39:50.577 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
-Dec-19 13:39:50.577 [main] DEBUG nextflow.Session - Session await
-Dec-19 13:39:50.579 [PathVisitor-2] ERROR nextflow.Channel - /home/jiguo/data/data/ref_genome/GRCh38.primary_assembly.genome.fa
-java.nio.file.NoSuchFileException: /home/jiguo/data/data/ref_genome/GRCh38.primary_assembly.genome.fa
-	at nextflow.file.FileHelper.checkIfExists(FileHelper.groovy:1112)
-	at nextflow.file.PathVisitor.applyGlobPattern0(PathVisitor.groovy:121)
-	at nextflow.file.PathVisitor.apply(PathVisitor.groovy:69)
-	at nextflow.file.PathVisitor$_applyAsync_closure1.doCall(PathVisitor.groovy:78)
-	at nextflow.file.PathVisitor$_applyAsync_closure1.call(PathVisitor.groovy)
-	at groovy.lang.Closure.run(Closure.java:505)
-	at java.base/java.util.concurrent.CompletableFuture$UniRun.tryFire(CompletableFuture.java:787)
-	at java.base/java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:482)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1570)
-Dec-19 13:39:50.583 [PathVisitor-3] ERROR nextflow.Channel - /home/jiguo/data/data/ref_genome/gencode.v47.primary_assembly.annotation.gtf
-java.nio.file.NoSuchFileException: /home/jiguo/data/data/ref_genome/gencode.v47.primary_assembly.annotation.gtf
-	at nextflow.file.FileHelper.checkIfExists(FileHelper.groovy:1112)
-	at nextflow.file.PathVisitor.applyGlobPattern0(PathVisitor.groovy:121)
-	at nextflow.file.PathVisitor.apply(PathVisitor.groovy:69)
-	at nextflow.file.PathVisitor$_applyAsync_closure1.doCall(PathVisitor.groovy:78)
-	at nextflow.file.PathVisitor$_applyAsync_closure1.call(PathVisitor.groovy)
-	at groovy.lang.Closure.run(Closure.java:505)
-	at java.base/java.util.concurrent.CompletableFuture$UniRun.tryFire(CompletableFuture.java:787)
-	at java.base/java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:482)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1570)
-Dec-19 13:39:50.584 [PathVisitor-2] DEBUG nextflow.Session - Session aborted -- Cause: /home/jiguo/data/data/ref_genome/GRCh38.primary_assembly.genome.fa
-Dec-19 13:39:50.585 [PathVisitor-3] DEBUG nextflow.Session - Session aborted -- Cause: /home/jiguo/data/data/ref_genome/gencode.v47.primary_assembly.annotation.gtf
-Dec-19 13:39:50.598 [Actor Thread 5] ERROR nextflow.extension.OperatorImpl - @unknown
-java.nio.file.NoSuchFileException: /home/jiguo/data/data/rna_seq_data/RNSQ352_NEB_ribodepletion/AVT0425/avid10157/HeLa_Centrosome_rep1_S1_R2_001.fastq.gz
+Dec-19 14:02:50.491 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+Dec-19 14:02:50.491 [main] DEBUG nextflow.Session - Session await
+Dec-19 14:02:50.507 [Actor Thread 5] ERROR nextflow.extension.OperatorImpl - @unknown
+java.nio.file.NoSuchFileException: /home/jiguo/data/data/rna_seq_data/RNSQ352_NEB_ribodepletion/AVT0425/avid10157/RPE-p53KO_Centrosome_rep1_S3_R2_001.fastq.gz
 	at nextflow.file.FileHelper.checkIfExists(FileHelper.groovy:1112)
 	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:321)
 	at nextflow.Nextflow.file0(Nextflow.groovy:135)
@@ -142,7 +114,8 @@ java.nio.file.NoSuchFileException: /home/jiguo/data/data/rna_seq_data/RNSQ352_NE
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1570)
-Dec-19 13:39:50.606 [PathVisitor-3] DEBUG nextflow.Session - The following nodes are still active:
+Dec-19 14:02:50.515 [Actor Thread 5] DEBUG nextflow.Session - Session aborted -- Cause: /home/jiguo/data/data/rna_seq_data/RNSQ352_NEB_ribodepletion/AVT0425/avid10157/RPE-p53KO_Centrosome_rep1_S3_R2_001.fastq.gz
+Dec-19 14:02:50.542 [Actor Thread 5] DEBUG nextflow.Session - The following nodes are still active:
 [process] FASTQC
   status=ACTIVE
   port 0: (queue) OPEN  ; channel: -
@@ -150,7 +123,7 @@ Dec-19 13:39:50.606 [PathVisitor-3] DEBUG nextflow.Session - The following nodes
 
 [process] STAR_INDEX
   status=ACTIVE
-  port 0: (queue) OPEN  ; channel: genome
+  port 0: (queue) closed; channel: genome
   port 1: (queue) OPEN  ; channel: gtf
   port 2: (cntrl) -     ; channel: $
 
@@ -171,40 +144,10 @@ Dec-19 13:39:50.606 [PathVisitor-3] DEBUG nextflow.Session - The following nodes
   port 0: (value) OPEN  ; channel: *
   port 1: (cntrl) -     ; channel: $
 
-Dec-19 13:39:50.606 [PathVisitor-2] DEBUG nextflow.Session - The following nodes are still active:
-[process] FASTQC
-  status=ACTIVE
-  port 0: (queue) OPEN  ; channel: -
-  port 1: (cntrl) -     ; channel: $
-
-[process] STAR_INDEX
-  status=ACTIVE
-  port 0: (queue) OPEN  ; channel: genome
-  port 1: (queue) OPEN  ; channel: gtf
-  port 2: (cntrl) -     ; channel: $
-
-[process] STAR_ALIGN
-  status=ACTIVE
-  port 0: (queue) OPEN  ; channel: -
-  port 1: (queue) OPEN  ; channel: index
-  port 2: (cntrl) -     ; channel: $
-
-[process] FEATURECOUNTS
-  status=ACTIVE
-  port 0: (queue) OPEN  ; channel: gtf
-  port 1: (value) OPEN  ; channel: bams
-  port 2: (cntrl) -     ; channel: $
-
-[process] MULTIQC
-  status=ACTIVE
-  port 0: (value) OPEN  ; channel: *
-  port 1: (cntrl) -     ; channel: $
-
-Dec-19 13:39:50.609 [PathVisitor-2] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=0; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=0ms; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=0; peakCpus=0; peakMemory=0; ]
-Dec-19 13:39:50.621 [PathVisitor-3] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=0; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=0ms; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=0; peakCpus=0; peakMemory=0; ]
-Dec-19 13:39:50.678 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
-Dec-19 13:39:50.806 [main] DEBUG nextflow.Session - Session await > all processes finished
-Dec-19 13:39:50.806 [main] DEBUG nextflow.Session - Session await > all barriers passed
-Dec-19 13:39:50.806 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=0; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=0ms; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=0; peakCpus=0; peakMemory=0; ]
-Dec-19 13:39:50.812 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
-Dec-19 13:39:50.824 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye
+Dec-19 14:02:50.549 [Actor Thread 5] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=0; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=0ms; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=0; peakCpus=0; peakMemory=0; ]
+Dec-19 14:02:50.604 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
+Dec-19 14:02:50.722 [main] DEBUG nextflow.Session - Session await > all processes finished
+Dec-19 14:02:50.723 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Dec-19 14:02:50.723 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=0; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=3; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=0ms; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=0; peakCpus=0; peakMemory=0; ]
+Dec-19 14:02:50.730 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+Dec-19 14:02:50.743 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye
