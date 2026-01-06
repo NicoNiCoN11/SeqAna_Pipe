@@ -1,0 +1,27 @@
+
+ N E X T F L O W   ~  version 25.10.2
+
+Launching `main.nf` [agitated_cuvier] DSL2 - revision: c7da9e21c2
+
+
+============================================
+RNA-seq Count Pipeline
+============================================
+samplesheet  : /home/jiguo/SeqAna_Pipe/samplesheet.csv
+genome       : /home/jiguo/data/data/ref_genome/GRCh38.primary_assembly.genome.fa
+gtf          : /home/jiguo/data/data/ref_genome/gencode.v47.primary_assembly.annotation.gtf
+star_index   : /home/jiguo/data/data/outdir_rnaseq/star_index/star_index
+outdir       : /home/jiguo/data/data/reverse_stranded
+stranded     : 2
+============================================
+
+[-        ] FASTQC        | 0 of 3
+[-        ] STAR_ALIGN    | 0 of 4
+[-        ] FEATURECOUNTS -
+[-        ] MULTIQC       -
+
+executor >  local (1)
+[-        ] FASTQC              | 0 of 7
+[73/d09e30] STAR_ALIGN (rep1_1) | 0 of 7
+[-        ] FEATURECOUNTS       -
+[-        ] MULTIQC             -

@@ -8,7 +8,7 @@ params.genome = null
 params.gtf = null
 params.star_index = null
 params.outdir = "results"
-params.stranded = 0
+params.stranded = 2
 params.help = false
 
 // Help message
