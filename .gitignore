@@ -2,3 +2,5 @@
 .nextflow/
 work/
 .nextflow.log.*
+logs/
+significant_*
